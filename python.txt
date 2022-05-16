@@ -1,0 +1,207 @@
+Python:
+
+Aula 2- Entrada e saída de Dados:
+
+Algoritmo: conjunto de instruções dado a máquina para chegar no resultado que você queira executar.
+Composta:
+1-entrada de dados
+2-processamento de dados
+3-saída de dados
+
+print("") serve para imprimir valor na tela
+ctrl+S = salvar
+
+input ("") serve para receber uma entrada
+
+
+Aula 3- Variaveis
+
+# para fazer uma linha de comentario
+
+"""
+3 aspas no começa e no final irá definir varias linhas de comentário
+"""
+
+#1.Variável
+
+idade = 26  # criando variavel, idade recebe 26
+
+Python é case sensitive
+
+print (type (nome da variavel que vc quer saber o tipo))
+
+#obtendo dados do usuário e salvando em variáveis:
+
+linguagem = input ("Qual é a linguagem de programação que você está estudando?")
+
+print("A linguagem de programação que você está estudando é", linguagem)=> depois da virgula, vc coloca o nome da variavel qe o usuario vai responder. E consegue imprimir varias variaveis apenas usando a ","
+
+Aula 4- Operadores aritméticos e booleanos:
+
+# Operações aritimeticas:
+
+-Soma: +
+-Subtração: -
+-Divisão: /
+-Divisão inteira: //
+- Resto da divisão: %
+-Potência:**
+
+# Operadores booleanos
+
+São operadores de comparação
+
+print(idade1 > idade2) idade 1 é maior que idade 2
+print(idade1 <= idade2) menor igual
+print(idade1 == idade2) idade 1 é igual que idade 2
+print(idade1 != idade2)idade 1 é diferente que idade 2
+print(idade1 >= idade2)idade 1 é maior ou igual a idade 2
+print(idade1 > idade2) idade 1 é maior que idade 2
+
+
+Aula 5 - Conversão de tipos
+
+Python tem uma tipagem forte - em str. Não suporta uma operação int+ str
+
+idade = "26" é str
+idade_inteira = int (idade)
+
+int()
+str()
+float()
+bool()
+
+
+Aula 6 - estruturas condicionais
+
+-imagine que você queira imprimir "Aprovado", caso o estudante tenha uma média superior ou igual a 7, e "Reprovado", caso a médica seja inferior a 7.
+
+media =  float(input("Informe a media de estudante: "))
+
+if media >=7:
+print("Você foi aprovado")
+else:
+print("Você foi reprovado")
+
+elif:
+
+if media >=7:
+print("Você foi aprovado")
+elif media>= 5:
+print("recuperação")
+else:
+print("Você foi reprovado")
+
+
+Aula 7 - Laços de repetição (while)
+
+quando você não sabe quantas vezes você vai precuisar rodar a condição até que ela seja satisfeita
+
+numero_sorteado =15
+
+numero_escolhido = int(input("Informe um número entre 1 e 20: "))
+
+while numero_escolhido != numero_sorteado:
+    print("Você errou o numero, tente novamene...)
+senao estiver mais nada, este codigo entrará em look infinito
+    numero_escolhido = int(input("informe um numero entre 1 e 20: "))
+
+print("parabens! Você acertou!")
+
+
+variavel controlada:
+
+
+contador = 0
+while contador < 5:
+    print(contador)
+
+    contador = contador + 1
+
+
+Aula 8- Laços de repetição
+
+for variavel in range(10):
+para uma determinada variavel dentro de uma determinada faixa, faça alguma coisa
+    print(variavel)
+
+for variavel in range (1, 11):
+    print (variavel)
+
+Aula 9 - Listas
+lista [10, wallisson, 3.38930]
+indice       0    1          2
+
+
+lista = [10, 50, 30, 40, 25, 60, 5]
+
+print(lista[0:3] do 0 ao 3
+print(lista[3:6]do 3 ao 6
+print(lista[3:]) apartir do indice 3 até o final
+print(lista[2:6:2}) vai do 2 ao 6 pulando 2
+for elemente in lista:
+    print(elemento)
+
+Aula 10- Métodos e Funções de Listas
+
+lista=[1, 3, 12, 8, 2]
+
+lista.append()adiciona um elemento ao final da lista
+
+lista.insert(2, 10) = vc quem escolhe a posição. priemrio vc coloca o indice e depois o valor
+
+lista.extend(lista2) concatena duas listas em uma
+lista.pop= remove o ultimo indice
+lista.pop(indice que vc quer remover)
+lista.remove (coloca o elemento que vc quer remover- primeiro elemento com aquele valo)
+lista.count(2) conta quantas vezes tem o elemento dois por exemplo
+lista.index= procura qual o indice do elemento que vc desejar
+lista.sort= ordena na ordem crescente
+
+Aula 11- Funções
+
+- Como criar uma função-> inicia com def +nome da função +()+ :
+
+def saudacao():
+    print("Seja bem vinda")
+
+saudacao()
+
+- Função com parâmetro
+def saudacao(nome):
+    print(f"Seja bem vinda, {nome}")
+
+-função comparâmentro default:
+ja assume um valor padrão
+def saudacao(nome, curso-"Python):
+   print(f"Seja bem vinda, {nome}")
+   print(f"Ola, é um prazer ter você aqui {curso}")
+
+saudacao("walisson", python)
+
+-Funções com retorno
+
+def soma(num1, num2):
+
+    return num1+num2  = retorna o valor e encerra a função. por isso tem que ser colocado no final 
+resultado = soma(5, 7)
+
+print("O rersultado da soma é, resultado)
+
+
+Aula 12- Dicionários
+
+criação de dicionário:
+dicionario = {}
+dicionario = dict()
+
+dicionario ={"nom": "Wallisson", "idade": 26, "altura: 1.77}
+print(dicionario["idade])
+
+adicionando elementos em um dicionario:
+
+dicionario["programador"] = true
+
+print(dicionario)
+
+dicionario ["altura"]= 2    nesse caso este novo valor vai sobresair ao antigo
